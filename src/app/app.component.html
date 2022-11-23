@@ -1,0 +1,20 @@
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+<body> 
+    <div>
+    <h1> {{title}}</h1>
+    <input type="number" placeholder=0 name="num1" [(ngModel)]="num1">&nbsp;&nbsp;
+    <input type="number" placeholder=0 name="num2" [(ngModel)]="num2">
+    <br><br><div class="button">
+    <button (click)="add()">ADD</button>  &nbsp;
+    <button (click)="sub()">SUB</button>  &nbsp;
+    <button (click)="mul()">MUL</button>  &nbsp;
+    <button (click)="div()">DIV</button>  
+    <br></div>
+    <h2>Result: {{num3}} </h2>
+  </div> 
+  <app-comp></app-comp>
+<app-demo></app-demo>
